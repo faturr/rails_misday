@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kabupaten: MyString
+  misday_bulan: MyString
+  tema: MyText
+  tanggal: 2019-06-06
+  jml_FM_FS: MyString
+  jml_peserta_FM_FS: MyString
+  peserta_roms_kab: MyString
+  notula: MyString
+  daftar_hadir: MyString
+  foto: MyString
+
+two:
+  kabupaten: MyString
+  misday_bulan: MyString
+  tema: MyText
+  tanggal: 2019-06-06
+  jml_FM_FS: MyString
+  jml_peserta_FM_FS: MyString
+  peserta_roms_kab: MyString
+  notula: MyString
+  daftar_hadir: MyString
+  foto: MyString

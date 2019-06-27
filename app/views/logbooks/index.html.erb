@@ -1,0 +1,192 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Logbooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kab:</th>  
+      <th>Thn Pelak:</th>
+      <th>Status:</th>
+      <th>Desa Baru:</th>
+      <th>Desa Pasca:</th>
+      <th>M1:</th>
+      <th>M1 Ket:</th>
+      <th>M2111:</th>
+      <th>M2112:</th>
+      <th>M2121:</th>
+      <th>M2122:</th>
+      <th>M213:</th>
+      <th>M2141:</th>
+      <th>M2142</th>
+      <th>M2143</th>
+      <th>M2144</th>
+      <th>M2145</th>
+      <th>M2211</th>
+      <th>M2221</th>
+      <th>M2222</th>
+      <th>M2223</th>
+      <th>M241</th>
+      <th>M242</th>
+      <th>M243</th>
+      <th>M231</th>
+      <th>M25</th>
+      <th>M26</th>
+      <th>M2 k3t</th>
+      <th>M311</th>
+      <th>M312</th>
+      <th>M3121</th>
+      <th>M3122</th>
+      <th>M313</th>
+      <th>M3131</th>
+      <th>M32</th>
+      <th>M3 ket</th>
+      <th>M411 sam</th>
+      <th>M411 nonsam</th>
+      <th>M412</th>
+      <th>M413</th>
+      <th>M4141</th>
+      <th>M4142</th>
+      <th>M4143</th>
+      <th>M4144</th>
+      <th>M415</th>
+      <th>M421</th>
+      <th>M422</th>
+      <th>M423</th>
+      <th>M pelatihan</th>
+      <th>Kpspams</th>
+      <th>Peserta penawar</th>
+      <th>Harga sat</th>
+      <th>M4 k3t</th>
+      <th>M73 desa pasca</th>
+      <th>Jml logbook73</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @logbooks.each do |logbook| %>
+      <tr>
+        <td><%= logbook.kab %></td>
+        <td><%= logbook.tahun_pel %></td>
+        <td><%= logbook.status %></td>
+        <td><%= logbook.desa_baru %></td>
+        <td><%= logbook.desa_pasca %></td>
+        <td><%= logbook.m1 %></td>
+        <td><%= logbook.m1_ket %></td>
+        <td><%= logbook.m2111 %></td>
+        <td><%= logbook.m2112 %></td>
+        <td><%= logbook.m2121 %></td>
+        <td><%= logbook.m2122 %></td>
+        <td><%= logbook.m213 %></td>
+        <td><%= logbook.m2141 %></td>
+        <td><%= logbook.m2142 %></td>
+        <td><%= logbook.m2143 %></td>
+        <td><%= logbook.m2144 %></td>
+        <td><%= logbook.m2145 %></td>
+        <td><%= logbook.m2211 %></td>
+        <td><%= logbook.m2221 %></td>
+        <td><%= logbook.m2222 %></td>
+        <td><%= logbook.m2223 %></td>
+        <td><%= logbook.m241 %></td>
+        <td><%= logbook.m242 %></td>
+        <td><%= logbook.m243 %></td>
+        <td><%= logbook.m231 %></td>
+        <td><%= logbook.m25 %></td>
+        <td><%= logbook.m26 %></td>
+        <td><%= logbook.m2_k3t %></td>
+        <td><%= logbook.m311 %></td>
+        <td><%= logbook.m312 %></td>
+        <td><%= logbook.m3121 %></td>
+        <td><%= logbook.m3122 %></td>
+        <td><%= logbook.m313 %></td>
+        <td><%= logbook.m3131 %></td>
+        <td><%= logbook.m32 %></td>
+        <td><%= logbook.m3_ket %></td>
+        <td><%= logbook.m411_sam %></td>
+        <td><%= logbook.m411_nonsam %></td>
+        <td><%= logbook.m412 %></td>
+        <td><%= logbook.m413 %></td>
+        <td><%= logbook.m4141 %></td>
+        <td><%= logbook.m4142 %></td>
+        <td><%= logbook.m4143 %></td>
+        <td><%= logbook.m4144 %></td>
+        <td><%= logbook.m415 %></td>
+        <td><%= logbook.m421 %></td>
+        <td><%= logbook.m422 %></td>
+        <td><%= logbook.m423 %></td>
+        <td><%= logbook.m_pelatihan %></td>
+        <td><%= logbook.kpspams %></td>
+        <td><%= logbook.peserta_penawar %></td>
+        <td><%= logbook.harga_sat %></td>
+        <td><%= logbook.m4_k3t %></td>
+        <td><%= logbook.m73_desa_pasca %></td>
+        <td><%= logbook.jml_logbook73 %></td>
+        <td><%= link_to 'Show', logbook %></td>
+        <td><%= link_to 'Edit', edit_logbook_path(logbook) %></td>
+      <!--  <td><%= link_to 'Destroy', logbook, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Logbook', new_logbook_path %>
+
+<h4>Keterangan:</h4>
+<h3>Jika ada isian yang kosong, silahkan di isi angka 0 ya, yang tidak melaksanakan di isi 0 saja semuanya, dikolom keterangan bisa diisi dengan "Tidak melaksanakan MISDAY"</h3>
+<ul>
+  <li>Kab: Nama Kabupaten</li>
+  <li>Tahun Pel: Adalah tahun pelaksanan program</li>
+  <li>Satus: Tanggal MISDAY di buat</li>
+  <li>Desa baru: Berapa jumlah desa baru Pamsimas</li>
+  <li>Desa pasca: Berapa jumlah desa pasca program Pamsimas</li>
+  <li>M1: Jumlah logbook modul 1 tentang Informasi Umum yang terkumpul/ di input</li>
+  <li>M1 ket: Jika ada keterangan terkait dengan modul 1 yang perlu di tambahkan</li>
+  <li>M2111: Jumlah logbook Kader AMPL (Air Minum dan Penyehatan Lingkungan)</li>
+  <li>M2112: Jumlah logbook Sosialisasi Program Tingkat Desa</li>
+  <li>M2121: Jumlah logbook Pemetaan Sosial yang terkumpul/ di input</li>
+  <li>M2122: Jumlah logbook Pleno Hasil IMAS yang terkumpul/ di input</li>
+<li>M213: Jumlah logbook Pemicuan CLTS (Community Led Total Sanitation) yang terkumpul/ di input</li>
+<li>M2141: Jumlah logbook Identifikasi KKM dari Program Sejenis yang terkumpul/ di input</li>
+<li>M2142: Jumlah logbook emilihan Utusan Tingkat RW/Dusun/Unit terkecil lainnya yang terkumpul/ di input</li>
+<li>M2143: Jumlah logbook Pleno Pembentukan KKM Tingkat Desa/Kelurahan yang terkumpul/ di input</li>
+<li>M2144: Jumlah logbook KKM (Kelompok Keswadayaan Masyarakat) yang terkumpul/ di input</li>
+<li>M2145: Jumlah logbook Pembentukan Unit Kerja KKM/Satlak yang terkumpul/ di input</li>
+<li>M2211: Jumlah logbook Rapat Pleno Tingkat Desa membahas PJM Pro-Aksi yang terkumpul/ di input</li>
+<li>M2221: Jumlah logbook Rapat Pleno Tingkat Desa membahas RKM yang terkumpul/ di input</li>
+<li>M2222: Jumlah logbook Evaluasi RKM yang terkumpul/ di input</li>
+<li>M241: Jumlah logbook RKM Disetujui yang terkumpul/ di input</li>
+<li>M242: Jumlah logbook Target Penerima Manfaat yang terkumpul/ di input</li>
+<li>M243: Jumlah logbook Rencana Pengadaan Barang dan Jasa yang terkumpul/ di input</li>
+<li>M25: Jumlah logbook BPSPAMS (Badan Pengelola Sistem Penyediaan Air Minum dan Sanitasi)yang terkumpul/ di input</li>
+<li>M26: Jumlah logbook Usulan Penetapan Desa Sasaran yang terkumpul/ di input</li>
+<li>M2 Ket: Jika ada keterangan lain terkait dengan modul 2</li>
+<li>M311: Jumlah logbook Kontribusi Masyarakat - InCash yang terkumpul/ di input</li>
+<li>M312: Jumlah logbook PKS (Perjanjian Kerja Sama) yang terkumpul/ di input</li>
+<li>M3121: Jumlah logbook Amandemen PKS yang terkumpul/ di input</li>
+<li>M3122: Jumlah logbook Komitmen Pemberian Bantuan yang terkumpul/ di input</li>
+<li>M313: Jumlah logbook SP2D yang terkumpul/ di input</li>
+<li>M32: Jumlah logbook Sumber dana lainnya yang terkumpul/ di input</li>
+<li>M3 Ket: Ket: Jika ada keterangan lain terkait dengan modul 3</li>
+<li>M411 sam: Jumlah logbook CCO 1 (SAM) yang terkumpul/ di input</li>
+<li>M411 non sam: Jumlah logbook CCO 2 (Non SAM) yang terkumpul/ di input</li>
+<li>M412: Jumlah logbook Progres Realisasi RKM yang terkumpul/ di input</li>
+<li>M413: Jumlah logbook RPD dan LPD yang terkumpul/ di input</li>
+<li>M4141: Jumlah logbook Metode Partisipasi Masyarakat yang terkumpul/ di input</li>
+<li>M4142: Jumlah logbook Metode Survey Perbandingan Harga yang terkumpul/ di input</li>
+<li>M4143: Jumlah logbook Metode Penunjukan Langsung yang terkumpul/ di input</li>
+<li>M4144: Jumlah logbook Metode Pemililah Langsung yang terkumpul/ di input</li>
+<li>M415: Jumlah logbook Penerima Manfaat yang terkumpul/ di input</li>
+<li>M421: Jumlah logbook Penggunaan Tanah yang terkumpul/ di input</li>
+<li>M422: Jumlah logbook Penggunaan Kayu yang terkumpul/ di input</li>
+<li>M423: Jumlah logbook MHA yang terkumpul/ di input</li>
+<li>M Pelatihan: Jumlah logbook Pelatihan yang terkumpul/ di input</li>
+<li>PSPAMS: Jumlah logbook KPSPAMS yang terkumpul/ di input</li>
+<li>Peserta Penawar: Jumlah logbook Daftar Peserta Penawaran (Metode Pemilihan Langsung) yang terkumpul/ di input</li>
+<li>Harga Sat: Jumlah logbook Daftar Harga Satuan Material/Barang/Jasa yang terkumpul/ di input</li>
+<li>M4 Ket: Jika ada keterangan lain terkait dengan modul 4</li>
+<li>M73 desa Pasca: Jumlah logbook Jumlah Desa Pasca (tahun 2008-2018) yang terkumpul/ di input</li>
+<li>Jml logbook 73: Jumlah logbook 7.3 pada periode berjalan yang terkumpul/ di input</li>
+ <ul/>

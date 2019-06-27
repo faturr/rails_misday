@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kabupaten:</strong>
+  <%= @pemantauan.kabupaten %>
+</p>
+
+<p>
+  <strong>Misday bulan:</strong>
+  <%= @pemantauan.misday_bulan %>
+</p>
+
+<p>
+  <strong>Tema:</strong>
+  <%= @pemantauan.tema %>
+</p>
+
+<p>
+  <strong>Tanggal:</strong>
+  <%= @pemantauan.tanggal %>
+</p>
+
+<p>
+  <strong>Jml fm fs:</strong>
+  <%= @pemantauan.jml_FM_FS %>
+</p>
+
+<p>
+  <strong>Jml peserta fm fs:</strong>
+  <%= @pemantauan.jml_peserta_FM_FS %>
+</p>
+
+<p>
+  <strong>Peserta roms kab:</strong>
+  <%= @pemantauan.peserta_roms_kab %>
+</p>
+
+<p>
+  <strong>Notula:</strong>
+  <%= @pemantauan.notula %>
+</p>
+
+<p>
+  <strong>Daftar hadir:</strong>
+  <%= @pemantauan.daftar_hadir %>
+</p>
+
+<p>
+  <strong>Foto:</strong>
+  <%= @pemantauan.foto %>
+</p>
+
+<%= link_to 'Edit', edit_pemantauan_path(@pemantauan) %> |
+<%= link_to 'Back', pemantauans_path %>

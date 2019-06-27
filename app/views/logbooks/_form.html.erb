@@ -1,0 +1,292 @@
+<%= form_with(model: logbook, local: true) do |form| %>
+  <% if logbook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(logbook.errors.count, "error") %> prohibited this logbook from being saved:</h2>
+
+      <ul>
+      <% logbook.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :kab %>
+    <%= form.text_field :kab %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tahun_pel %>
+    <%= form.date_select :tahun_pel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.date_select :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desa_baru %>
+    <%= form.number_field :desa_baru %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desa_pasca %>
+    <%= form.number_field :desa_pasca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m1 %>
+    <%= form.number_field :m1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m1_ket %>
+    <%= form.text_area :m1_ket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2111 %>
+    <%= form.number_field :m2111 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2112 %>
+    <%= form.number_field :m2112 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2121 %>
+    <%= form.number_field :m2121 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2122 %>
+    <%= form.number_field :m2122 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m213 %>
+    <%= form.number_field :m213 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2141 %>
+    <%= form.number_field :m2141 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2142 %>
+    <%= form.number_field :m2142 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2143 %>
+    <%= form.number_field :m2143 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2144 %>
+    <%= form.number_field :m2144 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2145 %>
+    <%= form.number_field :m2145 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2211 %>
+    <%= form.number_field :m2211 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2221 %>
+    <%= form.number_field :m2221 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2222 %>
+    <%= form.number_field :m2222 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2223 %>
+    <%= form.number_field :m2223 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m241 %>
+    <%= form.number_field :m241 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m242 %>
+    <%= form.number_field :m242 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m243 %>
+    <%= form.number_field :m243 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m231 %>
+    <%= form.number_field :m231 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m25 %>
+    <%= form.number_field :m25 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m26 %>
+    <%= form.number_field :m26 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2_k3t %>
+    <%= form.text_area :m2_k3t %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m311 %>
+    <%= form.number_field :m311 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m312 %>
+    <%= form.number_field :m312 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m3121 %>
+    <%= form.number_field :m3121 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m3122 %>
+    <%= form.number_field :m3122 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m313 %>
+    <%= form.number_field :m313 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m3131 %>
+    <%= form.number_field :m3131 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m32 %>
+    <%= form.number_field :m32 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m3_ket %>
+    <%= form.text_area :m3_ket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m411_sam %>
+    <%= form.number_field :m411_sam %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m411_nonsam %>
+    <%= form.number_field :m411_nonsam %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m412 %>
+    <%= form.number_field :m412 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m413 %>
+    <%= form.number_field :m413 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m4141 %>
+    <%= form.number_field :m4141 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m4142 %>
+    <%= form.number_field :m4142 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m4143 %>
+    <%= form.number_field :m4143 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m4144 %>
+    <%= form.number_field :m4144 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m415 %>
+    <%= form.number_field :m415 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m421 %>
+    <%= form.number_field :m421 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m422 %>
+    <%= form.number_field :m422 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m423 %>
+    <%= form.number_field :m423 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m_pelatihan %>
+    <%= form.number_field :m_pelatihan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kpspams %>
+    <%= form.number_field :kpspams %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peserta_penawar %>
+    <%= form.number_field :peserta_penawar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :harga_sat %>
+    <%= form.number_field :harga_sat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m4_k3t %>
+    <%= form.text_area :m4_k3t %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m73_desa_pasca %>
+    <%= form.number_field :m73_desa_pasca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jml_logbook73 %>
+    <%= form.number_field :jml_logbook73 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

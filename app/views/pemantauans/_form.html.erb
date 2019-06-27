@@ -1,0 +1,67 @@
+<%= form_with(model: pemantauan, local: true) do |form| %>
+  <% if pemantauan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pemantauan.errors.count, "error") %> prohibited this pemantauan from being saved:</h2>
+
+      <ul>
+      <% pemantauan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :kabupaten %>
+    <%= form.text_field :kabupaten %>
+  </div>
+
+  <div class="field">
+    <%= form.label :misday_bulan %>
+    <%= form.text_field :misday_bulan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tema %>
+    <%= form.text_area :tema %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tanggal %>
+    <%= form.date_select :tanggal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jml_FM_FS %>
+    <%= form.text_field :jml_FM_FS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jml_peserta_FM_FS %>
+    <%= form.text_field :jml_peserta_FM_FS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peserta_roms_kab %>
+    <%= form.text_field :peserta_roms_kab %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notula %>
+    <%= form.text_field :notula %>
+  </div>
+
+  <div class="field">
+    <%= form.label :daftar_hadir %>
+    <%= form.text_field :daftar_hadir %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foto %>
+    <%= form.text_field :foto %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
